@@ -1,0 +1,207 @@
+html, body, h1, h2, h3, h4, h5, h6, p {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+font-family: Raleway;
+font-weight: 300;
+font-sixe: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: PlayfairDisplay;
+}
+
+img {
+ 	height: 100px;
+ 	width: auto;
+}
+
+p {
+	font-size: 33px;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.font-xl {
+	font-size: 80px;
+}
+
+.font-lrg{
+	font-size: 40px;
+}
+
+.font-md {
+	font-size: 1.4em;
+}
+
+.font-light {
+	font-weight: 300;
+}
+
+.font-bold {
+	font-weight: bold;
+}
+
+.font-italic {
+	font-style: italic;
+}
+
+.font-style-normal {
+	font-style: normal;
+}
+
+.font-uppercase {
+	text-transform: uppercase;
+}
+
+.font-shadow {
+	text-shadow: 2px 2px 5px #4f4f4f;
+}
+
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url(../fonts/PlayfairDisplay-Bold.otf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url(../fonts/PlayfairDisplay-BoldItalic.otf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url(../fonts/PlayfairDisplay-Italic.otf);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url(../fonts/PlayfairDisplay-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway-LightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway-Medium.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway-MediumItalic.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+
+.font-family-raleway {
+	font-family: Raleway;
+}
+
+.font-family-playfair {
+	font-family: PlayfairDisplay;
+}
+
+.cover-image {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url(../images/banner-girl.png) center bottom no-repeat, url(../images/flower-bkgd.jpg) center center;
+	background-size: cover, auto 85%, 150%;
+	height:850px;
+}
+
+.font-white {
+	color: #fff;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-justify-center {
+	justify-content: center;
+}
+
+.flex-align-center {
+	align-items: center;
+}
+
+.flex-space-between {
+	justify-content: space-between;
+}
+
+.flex-space-around {
+	justify-content: space-between;
+}
+
+.main-content-padding {
+	padding: 100px 20px;
+}
+.md-padding {
+	padding: 30px;
+}
+
+.sm-padding {
+	padding: 20px;
+}
+
+.lrg-padding-vert {
+	padding: 60px 0;
+}
+
+.sm-padding-vert {
+	padding: 20px 0;
+}
+
+.xs-padding-vert {
+	padding: 20px 0;
+}
+
+.md-padding-top {
+	padding-top: 40px;
+}
+.sm-padding-top {
+	padding-top: 20px;
+}
+
+.md-padding-horizontal {
+	padding: 0 40px;
+}

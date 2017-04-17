@@ -310,112 +310,10 @@ input[type=submit] {
 	font-family: Raleway;
 	padding: 8px 16px;
 	border: none;
+	-webkit-appearance: none;
 }
 
 /* Media Queries */
-/*@media only screen and (min-width: 600px) and (max-width: 1239px) {
-
-	body {
-		font-size: 16px;
-	}
-
- 	h1 {
-		font-size: 3em;
-	}
-
-	h2 {
-		font-size: 2.5em;
-	}
-
-	h3 {
-		font-size: 1.4em;
-	}
-
-	p {
-		font-size: 1.1em;
-	}
-
-	.icon-font {
-		font-size: 1.1em;
-		padding-top: 9px;
-		padding-bottom: 9px;
-	}
-
-	.jumbotron {
-		height: 400px;
-	}
-
-	.product {
-		width: 40%;
-	}
-
-	.sm-font-tablet-desktop {
-		font-size: 0.7em;
-	}
-
-	.md-font-tablet-desktop {
-		font-size: 1em;
-	}
-
-	.lrg-padding-vert {
-		padding-top: 60px;
-		padding-bottom: 60px;
-	}
-
-
-	.font-line-height-sm {
-		line-height: 1em;
-	}
-
-	.newsletter {
-		background-size: auto 230%;
-	}
-
-	.border-bottom-light {
-		border-bottom: 8px solid #fff;
-	}
-
-	.tablet-section-padding-horizontal {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-
-		input[type=text] {
-		width: 380px;
-		padding: 14px 30px;
-		font-size: 1em;
-	}
-
-		input[type=submit] {
-		margin-left: -129px;
-		padding: 11px 23px;
-		font-size: 1em;
-	}
-
-	.tablet-desktop-show {
-		display: initial;
-	}
-
-	.tablet-desktop-flex-row {
-		flex-direction: row;
-	}
-
-	.tablet-desktop-flex-col {
-		flex-direction: column;
-	}
-
-	.text-align-left {
-		text-align: left;
-	}
-
-	.no-padding-tablet {
-		padding: 0px;
-	}
-
-	.tablet-desktop-padding-right {
-		padding-right: 30px;
-	}
-}*/
 
 @media only screen and (min-device-width: 600px) and (max-device-width: 1239px), only screen and (min-width: 600px) and (max-width: 1239px){
  
@@ -508,6 +406,7 @@ input[type=submit] {
 		margin-left: -129px;
 		padding: 11px 23px;
 		font-size: 1em;
+		-webkit-appearance: none;
 	}
 
 	.tablet-desktop-show {
@@ -577,7 +476,7 @@ input[type=submit] {
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}
-	
+
 	.lrg-padding-vert {
 		padding-top: 60px;
 		padding-bottom: 60px;
@@ -623,6 +522,7 @@ input[type=submit] {
 		margin-left: -129px;
 		font-size: 1em;
 		padding: 10px 23px;
+        -webkit-appearance: none;
 	}
 
 	.tablet-desktop-show {

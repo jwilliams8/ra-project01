@@ -23,9 +23,18 @@ April 17th, 2017
 - Reduced css to ensure there were no unused classes floating around, adjusted ordering and names of selectors to optimize semantic meaning.
 - Added IE Edge compatibility meta tag
 - Fixed indentation between parent/child elements
-- A viewable verion of this project can be found here - https://jwilliams8.github.io/ra-project01/
 
 April 18th, 2017
 
 - Resolved a bug found in nav bar when last push was made which pushed an image out of the field of view, breaking the width of the page as a result.
 * Newsletter Singup form submit button placed in input field with a negative left margin. Needs updating to ensure that the page submit button doesn't break out of the line when the screen is reduced past the width of the input field *
+
+April 18th, 2017
+
+- Fixed the build of the newsletter form submit button and input field, however work still needs to be done to make it responsive.
+- Added a carousel slider for the products
+- Added an unordered list in the nav and incorporated smoothscroll to navigate to certain sections of the webpage when the nav links are clicked
+- Added a buy now button for the products
+- Added a CSS reset
+
+A viewable verion of this project can be found here - https://jwilliams8.github.io/ra-project01/

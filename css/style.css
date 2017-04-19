@@ -28,6 +28,7 @@ h3 {
 nav {
 	height: 40px;
 	padding: 10px 8px;
+	background-color: #fff;
 }
 
 a {
@@ -39,6 +40,13 @@ a:hover {
 	color:#b64036;
 }
 
+.test {
+	margin-left: auto;
+}
+
+li {
+	display: inline;
+}
 /* percentage widths & heights */
 
 .full-height {
@@ -46,13 +54,18 @@ a:hover {
 	width: auto;
 }
 
+.product-image-width {
+	width: 70%;
+	height: auto;
+}
+
 .full-width {
 	width: 100%;
 	height: auto;
 }
 
-.product {
-	width: 75%;
+.product-container-width {
+	width: 80%;
 }
 
 /* backgrounds */
@@ -60,19 +73,20 @@ a:hover {
 .jumbotron {
 	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url(../images/banner-girl.png) 50% 140% no-repeat, url(../images/flower-bkgd.jpg) center center;
 	background-size: cover, auto 88%, cover;
-	height:330px;
+	height: 50vh;
+	position: relative;
 }
 
 .newsletter {
 	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/wave-bkgd.jpg)center bottom;
-	background-size: auto 260%;
+	background-size: cover 260%;
 }
 
 .bg-color-orange {
 	background-color: #e2574c;
 }
 
-.bg-dark-grey {
+.bg-color-dark-grey {
 	background-color: #242424
 }
 
@@ -148,6 +162,14 @@ a:hover {
 	font-size: 0.9em;
 }
 
+.lrg-font {
+	font-size: 1.3em;
+}
+
+.font-line-height-md {
+	line-height: 1.6em;
+}
+
 .font-line-height-lrg {
 	line-height: 1.9em;
 }
@@ -188,12 +210,23 @@ a:hover {
 	color: #e2574c;
 }
 
+.font-black {
+	color: #000;
+}
+
 .font-light-grey {
 	color: #969696;
 }
 
 .font-weight-light {
 	font-weight: 300;
+}
+
+/* margin declarations */
+
+.md-margin-vert {
+	margin-top: 10px;
+	margin-bottom: 30px;
 }
 
 /* padding declarations */
@@ -217,6 +250,11 @@ a:hover {
 	padding-right: 8px;
 }
 
+.sm-padding-horizontal {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
 .lrg-padding-bottom {
 	padding-bottom: 50px;
 }
@@ -231,6 +269,10 @@ a:hover {
 
 .md-padding-bottom {
 	padding-bottom: 30px;
+}
+
+.md-padding-left {
+	padding-right: 20px;
 }
 
 
@@ -284,29 +326,49 @@ a:hover {
 
 /* display properties */
 
-.mobile-hide {
+.element-hide {
 	display: none;
 }
+
 
 /* form styling */
 
 input[type=text] {
 	border-radius: 100px;
-	width: 320px;
-	padding: 10px 20px;
 	border: none;
 	font-size: 0.9em;
 	font-family: Raleway;
+	padding-left: 10px;
 }
 
 button {
-	margin-left: -98px;
 	font-size: 0.9em;
 	border-radius: 100px;
 	font-family: Raleway;
 	padding: 8px 16px;
 	border: none;
 	-webkit-appearance: none;
+}
+
+.form-bg {
+	background-color: #fff;
+	padding:3px;
+	border-radius: 100px;
+
+}
+
+button:focus, input:focus {
+	outline:none;
+}
+
+button:hover {
+	background-color: #b64036;
+}
+
+.btn-styling {
+	padding: 8px 16px;
+	border-radius: 100px;
+
 }
 
 /* Media Queries */
@@ -332,6 +394,10 @@ button {
 
 	.newsletter {
 		background-size: auto 230%;
+	}
+
+	.tablet-hide {
+		display: none;
 	}
 
 }
@@ -377,13 +443,18 @@ button {
 
 	.icon-font {
 		font-size: 1em;
-		padding-top: 6px;
-		padding-bottom: 6px;
+		padding-top: 8px;
+		padding-bottom: 8px;
 	}
 
 
 	.text-align-left {
 		text-align: left;
+	}
+
+	.md-margin-vert {
+		margin-top: 20px;
+		margin-bottom: 30px;
 	}
 
 	.sm-padding-vert {
@@ -400,8 +471,8 @@ button {
 		height: 400px;
 	}
 
-	.product {
-		width: 40%;
+	.product-container-width {
+		width: 35%;
 	}
 
 	.tablet-desktop-show {
@@ -417,13 +488,11 @@ button {
 	}
 
 		input[type=text] {
-		width: 380px;
-		padding: 14px 30px;
 		font-size: 1em;
+		padding-left: 20px;
 	}
 
 		button {
-		margin-left: -129px;
 		padding: 11px 23px;
 		font-size: 1em;
 		-webkit-appearance: none;
@@ -446,8 +515,13 @@ button {
 		height: 550px;
 	}
 
-	.product {
-		width: 22%;
+	.product-container-width {
+		width: 25%;
+	}
+
+	.md-margin-vert {
+		margin-top: 30px;
+		margin-bottom: 30px;
 	}
 
 	.desktop-footer-padding-horizontal {
@@ -469,11 +543,10 @@ button {
 	}
 
 		input[type=text] {
-		width: 440px;
+		padding-left: 20px;
 	}
 
 		button {
-		margin-left: -129px;
 		font-size: 1em;
 		padding: 10px 23px;
 	}

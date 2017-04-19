@@ -37,4 +37,9 @@ April 18th, 2017
 - Added a buy now button for the products
 - Added a CSS reset
 
+April 19th, 2017
+
+- Full fix for newsletter form implemented, the sizing is now fully respnsive and no longer breaks based on page widths.
+
 A viewable verion of this project can be found here - https://jwilliams8.github.io/ra-project01/
+

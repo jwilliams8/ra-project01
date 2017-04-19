@@ -16,17 +16,17 @@
 	</head>
 
 	<body>
-		<main class="flex flex-col">
-
-			<nav class="flex flex-row flex-justify-between flex-align-items-center">
-				<a href="#"><img class="full-height" src="images/aloha-logo.svg"/></a>
-				<ul class="test font-weight-light sm-padding-horizontal lrg-font element-hide tablet-desktop-show">
+			<nav class="flex flex-row flex-justify-between flex-align-items-center flex-align-content-center full-width">
+				<a href="#"><img class="sm-padding-horizontal" src="images/aloha-logo.svg"/></a>
+				<ul class="margin-left-auto font-weight-light element-hide tablet-desktop-show">
 					<li class="md-padding-left"><a href="#styles" class="smoothScroll">Styles</a></li>
 					<li class="md-padding-left"><a href="#products" class="smoothScroll">Products</a></li>
 					<li class="md-padding-left"><a href="#updates" class="smoothScroll">Updates</a></li>
 				</ul>
-				<img class="full-height" src="images/cart-icon.svg"/>
+				<img class="sm-padding-horizontal" src="images/cart-icon.svg"/>
 			</nav>
+
+		<main class="flex flex-col">
 
 			<section class="jumbotron font-white text-center font-shadow flex flex-col flex-justify-center">
 				<p class="font-uppercase xs-padding-bottom">New Collection</p>
@@ -37,36 +37,6 @@
 				<h2 class="font-weight-light font-italic text-center sm-padding-bottom">Hand-Crafted <span class="font-bold font-style-normal">Styles</span></h2>
 				<p class="font-weight-light text-center font-line-height-lrg">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products, or sign-up for updates below.</p>
 			</section>
-
-			<!--<section class="section-padding lrg-padding-vert text-center">
-				<h2 class="font-weight-light font-italic md-padding-bottom">Most-Loved <span class="font-bold font-style-normal">Products</span></h2>
-				<div class="flex flex-row flex-wrap flex-justify-around">
-					<div class="product">
-						<a href="#"><img class="full-width xs-padding-bottom" src="images/stretch-knit-dress.jpg"/></a>
-						<p class="font-light-grey font-uppercase sm-font sm-font-tablet-desktop">Dresses</p>
-						<h3 class="font-orange font-weight-light sm-padding-vert font-line-height-sm"><a href="#">Stretch Knit Dress</a></h3>
-						<p class="font-light-grey md-font md-font-tablet-desktop md-padding-bottom no-padding-desktop ">$169.00</p>
-					</div>
-					<div class="product">
-						<a href="#"><img class="full-width xs-padding-bottom" src="images/cotton-blue-shirt.jpg"/></a>
-						<p class="font-light-grey font-uppercase sm-font sm-font-tablet-desktop">Shirts</p>
-						<h3 class="font-orange font-weight-light sm-padding-vert font-line-height-sm"><a href="#">Cotton Blue Shirt</a></h3>
-						<p class="font-light-grey md-font md-font-tablet-desktop lrg-padding-bottom no-padding-desktop ">$89.00</p>
-					</div>
-					<div class="product">
-						<a href="#"><img class="full-width xs-padding-bottom" src="images/checked-stretch-dress.jpg"/></a>
-						<p class="font-light-grey font-uppercase sm-font sm-font-tablet-desktop">Dresses</p>
-						<h3 class="font-orange font-weight-light sm-padding-vert font-line-height-sm"><a href="#">Checked Stretch Dress</a></h3>
-						<p class="font-light-grey md-font md-font-tablet-desktop lrg-padding-bottom no-padding-desktop ">$129.00</p>
-					</div>
-					<div class="product">
-						<a href="#"><img class="full-width xs-padding-bottom" src="images/blue-hipster-backpack.jpg"/></a>
-						<p class="font-light-grey font-uppercase sm-font sm-font-tablet-desktop">Bags</p>
-						<h3 class="font-orange font-weight-light sm-padding-vert font-line-height-sm"><a href="#">Blue Hipster Backpack</a></h3>
-						<p class="font-light-grey md-font md-font-tablet-desktop">$69.00</p>
-					</div>
-				</div>
-			</section>-->
 
 			<section class="lrg-padding-vert text-center" id="products">
 			<h2 class="font-weight-light font-italic md-padding-bottom">Most-Loved <span class="font-bold font-style-normal">Products</span></h2>
@@ -150,8 +120,8 @@
 			<section class="newsletter font-white flex flex-col flex-justify-center flex-align-items-center border-bottom-light section-padding desktop-section-padding-horizontal lrg-padding-vert" id="updates">
 				<h2 class="font-weight-light font-italic font-shadow text-center sm-padding-bottom">Sign-up for<span class="font-bold font-style-normal"> Updates</span></h2>
 				<p class="text-center font-line-height-lrg font-weight-light md-padding-bottom tablet-section-padding-horizontal">Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
-				<form>
-					<div class="form-bg">
+				<form class="flex flex-justify-center">
+					<div class="form-bg flex flex-justify-between">
 					<input type="text" id="newsletter" class="font-weight-light font-light-grey" placeholder="Your Email">
 					<button type="submit" class="font-white bg-color-orange">Subscribe</button>
 					</div>
@@ -193,7 +163,15 @@
 		</main>
 
 	<script>
-	var targetOffset = $target.offset().top - 70;
+	$(function() {
+		$(window).scroll(function() {
+			if($(window).scrollTop() >= 100) {
+				$('nav').addClass('scrolled');
 
+			} else {
+				$('nav').removeClass('scrolled');
+			}
+		});
+	});
 	</script>
 	</body>

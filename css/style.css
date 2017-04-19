@@ -26,9 +26,7 @@ h3 {
 }
 
 nav {
-	height: 40px;
-	padding: 10px 8px;
-	background-color: #fff;
+	height: 60px;
 }
 
 a {
@@ -36,11 +34,17 @@ a {
 	text-decoration: none;
 }
 
+/* change position */
+
+nav img { 
+	height: 65%;
+}
+
 a:hover {
 	color:#b64036;
 }
 
-.test {
+.margin-left-auto {
 	margin-left: auto;
 }
 
@@ -51,17 +55,14 @@ li {
 
 .full-height {
 	height: 100%;
-	width: auto;
 }
 
 .product-image-width {
 	width: 70%;
-	height: auto;
 }
 
 .full-width {
 	width: 100%;
-	height: auto;
 }
 
 .product-container-width {
@@ -231,6 +232,10 @@ li {
 
 /* padding declarations */
 
+.nav-icon-padding {
+	padding: 10px;
+}
+
 .section-padding {
 	padding: 10px 8px;
 }
@@ -251,8 +256,8 @@ li {
 }
 
 .sm-padding-horizontal {
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .lrg-padding-bottom {
@@ -324,6 +329,10 @@ li {
 	align-items: center;
 }
 
+.flex-align-content-center {
+	align-content: center;
+}
+
 /* display properties */
 
 .element-hide {
@@ -339,6 +348,7 @@ input[type=text] {
 	font-size: 0.9em;
 	font-family: Raleway;
 	padding-left: 10px;
+	width: 100%;
 }
 
 button {
@@ -354,7 +364,12 @@ button {
 	background-color: #fff;
 	padding:3px;
 	border-radius: 100px;
+	width: 80%;
+	max-width: 500px;
+}
 
+form {
+	width: 100%;
 }
 
 button:focus, input:focus {
@@ -400,6 +415,8 @@ button:hover {
 		display: none;
 	}
 
+	
+
 }
 
 @media only screen and  (min-device-width: 600px) and (min-width: 600px) {
@@ -425,8 +442,25 @@ button:hover {
 	}
 
 	nav {
-		height: 55px;
-		padding: 18px 12px;
+		height: 90px;
+		font-size: 1em;
+		position: fixed;
+		background-color: rgba(255,255,255,.9);
+		z-index: 1;
+		transition: all 0.35s ease;
+		font-size: 1.3em;
+		top: 0;
+	}
+
+	main {
+		margin-top: 90px;
+	}
+
+	.scrolled {
+		height: 60px;
+		background-color: rgba(255,255,255,.9);
+		transition: all 0.35s ease;
+		font-size: 1em;
 	}
 
 	.sm-font-tablet-desktop {
@@ -447,6 +481,10 @@ button:hover {
 		padding-bottom: 8px;
 	}
 
+	.sm-padding-horizontal {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
 
 	.text-align-left {
 		text-align: left;
@@ -472,7 +510,7 @@ button:hover {
 	}
 
 	.product-container-width {
-		width: 35%;
+		width: 33%;
 	}
 
 	.tablet-desktop-show {
@@ -503,12 +541,19 @@ button:hover {
 @media only screen and  (min-device-width: 1240px) and (min-width: 1240px) {
 
 	nav {
-		height: 60px;
-		padding: 20px 20px;
+		height: 90px;
 	}
 
 	h1 {
 		font-size: 4em;
+	}
+
+	main {
+		margin-top: 90px;
+	}
+
+	nav img { 
+		height: 60%;
 	}
 
 	.jumbotron {
@@ -524,14 +569,19 @@ button:hover {
 		margin-bottom: 30px;
 	}
 
+	.sm-padding-horizontal {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
 	.desktop-footer-padding-horizontal {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
 
 	.desktop-section-padding-horizontal {
-		padding-left: 300px;
-		padding-right: 300px;
+		padding-left: 260px;
+		padding-right: 260px;
 	}
 
 	.tablet-desktop-padding-right {
@@ -550,5 +600,11 @@ button:hover {
 		font-size: 1em;
 		padding: 10px 23px;
 	}
+
+
+.form-bg {
+	width: 60%;
+
+}
 
 }

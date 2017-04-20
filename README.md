@@ -41,5 +41,12 @@ April 19th, 2017
 
 - Full fix for newsletter form implemented, the sizing is now fully respnsive and no longer breaks based on page widths.
 
+April 19th, 2017
+
+- Fixed logo size issue that was causing the logo to appear outside of the nav when viewed in firefox
+- Added 4 new products to the carousel
+- Added a compare at price functionality for products on sale with a linethrough span
+- Added an email validator for the newsletter form
+
 A viewable verion of this project can be found here - https://jwilliams8.github.io/ra-project01/
 

@@ -34,6 +34,9 @@ a {
 	text-decoration: none;
 }
 
+.flickity-prev-next-button {
+	top: 35%;
+}
 /* change position */
 
 nav img { 
@@ -74,8 +77,7 @@ li {
 .jumbotron {
 	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url(../images/banner-girl.png) 50% 140% no-repeat, url(../images/flower-bkgd.jpg) center center;
 	background-size: cover, auto 88%, cover;
-	height: 50vh;
-	position: relative;
+	height: 55vh;
 }
 
 .newsletter {
@@ -199,6 +201,11 @@ li {
 	font-style: initial;
 }
 
+.font-linethrough {
+	text-decoration: line-through;
+	color: #e2574c;
+}
+
 .font-shadow {
 	text-shadow: 2px 2px 5px #4f4f4f;
 }
@@ -276,7 +283,11 @@ li {
 	padding-bottom: 30px;
 }
 
-.md-padding-left {
+.sm-padding-right {
+	padding-right: 5px;
+}
+
+.md-padding-right {
 	padding-right: 20px;
 }
 
@@ -452,13 +463,16 @@ button:hover {
 		top: 0;
 	}
 
+	nav img { 
+		height: 60%;
+	}
+
 	main {
 		margin-top: 90px;
 	}
 
 	.scrolled {
 		height: 60px;
-		background-color: rgba(255,255,255,.9);
 		transition: all 0.35s ease;
 		font-size: 1em;
 	}
@@ -505,10 +519,6 @@ button:hover {
 		padding-bottom: 60px;
 	}
 	
-	.jumbotron {
-		height: 400px;
-	}
-
 	.product-container-width {
 		width: 33%;
 	}
@@ -550,14 +560,6 @@ button:hover {
 
 	main {
 		margin-top: 90px;
-	}
-
-	nav img { 
-		height: 60%;
-	}
-
-	.jumbotron {
-		height: 550px;
 	}
 
 	.product-container-width {

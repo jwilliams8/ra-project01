@@ -1,4 +1,4 @@
-html, body, h1, h2, h3, h4, h5, h5, p, form{
+html, body, h1, h2, h3, h4, h5, h5, p, form {
 	padding: 0;
 	margin: 0;
 }
@@ -26,10 +26,16 @@ h3 {
 }
 
 nav {
-	height: 40px;
-	padding: 10px 8px;
+	height: 60px;
 }
 
+<<<<<<< HEAD
+=======
+nav img { 
+	height: 65%;
+}
+
+>>>>>>> carousel
 a {
 	color: inherit;
 	text-decoration: none;
@@ -38,6 +44,7 @@ a {
 a:hover {
 	color:#b64036;
 }
+<<<<<<< HEAD
 
 /* backgrounds */
 
@@ -45,19 +52,19 @@ a:hover {
 	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url(../images/banner-girl.png) 50% 180% no-repeat, url(../images/flower-bkgd.jpg) center center;
 	background-size: cover, auto 95%, cover;
 	height:330px;
+=======
+
+li {
+	display: inline;
+>>>>>>> carousel
 }
 
-.newsletter {
-	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/wave-bkgd.jpg)center bottom;
-	background-size: auto 260%;
+button:focus, input:focus {
+	outline:none;
 }
 
-.bg-color-orange {
-	background-color: #e2574c;
-}
-
-.bg-dark-grey {
-	background-color: #242424
+button:hover {
+	background-color: #b64036;
 }
 
 /* @font-face imports */
@@ -118,7 +125,7 @@ a:hover {
     font-style: italic;
 }
 
-/* font declarations */
+/* font/text declarations */
 
 .font-family-playfair {
 	font-family: PlayfairDisplay;
@@ -132,16 +139,33 @@ a:hover {
 	font-size: 0.9em;
 }
 
+<<<<<<< HEAD
 .font-line-height-lrg {
 	line-height: 1.9em;
 }
 
 .text-center {
 	text-align: center;
+=======
+.lrg-font {
+	font-size: 1.3em;
+>>>>>>> carousel
 }
 
-.font-shadow {
-	text-shadow: 2px 2px 5px #4f4f4f;
+.xl-font {
+	font-size: 2em;
+}
+
+.font-line-height-md {
+	line-height: 1.6em;
+}
+
+.font-line-height-lrg {
+	line-height: 1.9em;
+}
+
+.text-center {
+	text-align: center;
 }
 
 .font-style-normal {
@@ -164,12 +188,32 @@ a:hover {
 	font-style: italic;
 }
 
+<<<<<<< HEAD
+=======
+.font-style-normal {
+	font-style: initial;
+}
+
+.font-linethrough {
+	text-decoration: line-through;
+	color: #e2574c;
+}
+
+.font-shadow {
+	text-shadow: 2px 2px 5px #4f4f4f;
+}
+
+>>>>>>> carousel
 .font-white {
 	color: #fff;
 }
 
 .font-orange {
 	color: #e2574c;
+}
+
+.font-black {
+	color: #000;
 }
 
 .font-light-grey {
@@ -180,7 +224,154 @@ a:hover {
 	font-weight: 300;
 }
 
+<<<<<<< HEAD
 /* percentage width & heights */
+=======
+/* percentage widths & heights */
+
+.full-height {
+	height: 100%;
+}
+
+.product-image-width {
+	width: 70%;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.product-container-width {
+	width: 80%;
+}
+
+/* backgrounds */
+
+.jumbotron {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url(../images/banner-girl.png) 50% 140% no-repeat, url(../images/flower-bkgd.jpg) center center;
+	background-size: cover, auto 88%, cover;
+	height: 55vh;
+}
+
+.newsletter {
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/wave-bkgd.jpg)center bottom;
+	background-size: cover 260%;
+}
+
+.bg-color-orange {
+	background-color: #e2574c;
+}
+
+.bg-color-dark-grey {
+	background-color: #242424
+}
+
+.box-1 {
+ 	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/mens-category.jpg) center center no-repeat;
+ 	background-size: 103%;
+ 	transition: all 0.4s ease;
+ 	flex: 1;
+}
+
+.box-1:hover {
+	 background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/mens-category.jpg) center center no-repeat;
+	 background-size: 115%;
+	 transition: all 0.4s ease;
+}
+
+.box-2 {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/trends-category.jpg) center center no-repeat;
+	background-size: 103%;
+	transition: all 0.4s ease;
+ 	flex: 1;
+}
+
+.box-2:hover {
+	 background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/trends-category.jpg) center center no-repeat;
+	 background-size: 115%;
+	 transition: all 0.4s ease;
+}
+
+.box-3 {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/glasses-category.jpg) center center no-repeat;
+	background-size: 103%;
+	transition: all 0.4s ease;
+ 	flex: 1;
+}
+
+.box-3:hover {
+	 background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/glasses-category.jpg) center center no-repeat;
+	 background-size: 115%;
+	 transition: all 0.4s ease;
+}
+
+.box-4 {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/sale-category.jpg) center center no-repeat;
+	background-size: 103%;
+	transition: all 0.4s ease;
+ 	flex: 1;
+}
+
+.box-4:hover {
+	 background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/sale-category.jpg) center center no-repeat;
+	 background-size: 115%;
+	 transition: all 0.4s ease;
+}
+
+.box-5 {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/bags-category.jpg) center center no-repeat;
+	background-size: 103%;
+	transition: all 0.4s ease;
+ 	flex: 1;
+}
+
+.box-5:hover {
+	 background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bags-category.jpg) center center no-repeat;
+	 background-size: 115%;
+	 transition: all 0.4s ease;
+}
+
+.box-6 {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/womens-category.jpg) center center no-repeat;
+	background-size: 103%;
+	transition: all 0.4s ease;
+ 	flex: 1;
+}
+
+.box-6:hover {
+	 background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/womens-category.jpg) center center no-repeat;
+	 background-size: 115%;
+	 transition: all 0.4s ease;
+}
+
+/* margin declarations */
+
+.md-margin-vert {
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.margin-left-auto {
+	margin-left: auto;
+}
+
+.sm-margin-bottom {
+	margin-bottom: 5px;
+}
+
+.sm-margin-left {
+	margin-left: 5px;
+}
+
+.sm-margin-right {
+	margin-right: 5px;
+}
+
+.sm-margin-horizontal {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+>>>>>>> carousel
 
 .full-height {
 	height: 100%;
@@ -192,6 +383,7 @@ a:hover {
 	height: auto;
 }
 
+<<<<<<< HEAD
 .product {
 	width: 75%;
 }
@@ -200,6 +392,11 @@ a:hover {
 
 .section-padding {
 	padding: 10px 8px;
+=======
+.category-padding {
+	padding-top: 22%;
+	padding-bottom: 22%;
+>>>>>>> carousel
 }
 
 .sm-padding-vert {
@@ -210,6 +407,17 @@ a:hover {
 .lrg-padding-vert {
 	padding-top: 40px;
 	padding-bottom: 40px;
+<<<<<<< HEAD
+=======
+}
+
+.lrg-padding-top {
+	padding-top: 40px;
+}
+
+.categories {
+	padding-top: 60px;
+>>>>>>> carousel
 }
 
 .xs-padding-horizontal {
@@ -217,6 +425,14 @@ a:hover {
 	padding-right: 8px;
 }
 
+<<<<<<< HEAD
+=======
+.sm-padding-horizontal {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+>>>>>>> carousel
 .xs-padding-bottom {
 	padding-bottom: 15px;
 }
@@ -227,20 +443,35 @@ a:hover {
 
 .md-padding-bottom {
 	padding-bottom: 30px;
+<<<<<<< HEAD
+}
+
+.lrg-padding-bottom {
+	padding-bottom: 50px;
+=======
+>>>>>>> carousel
 }
 
 .lrg-padding-bottom {
 	padding-bottom: 50px;
 }
 
-/* border declarations */
-
-.border-bottom-dark {
-	border-bottom: 1px solid #d7d7d7;
+.sm-padding-right {
+	padding-right: 5px;
 }
+
+.md-padding-right {
+	padding-right: 14px;
+}
+
+/* border declarations */
 
 .border-bottom-light {
 	border-bottom: 7px solid #fff;
+}
+
+.border-top-dark {
+	border-top: 1px solid #d7d7d7;
 }
 
 .border-none {
@@ -273,27 +504,55 @@ a:hover {
 	justify-content: space-around;
 }
 
+<<<<<<< HEAD
+=======
+.flex-justify-start {
+	justify-content:flex-start;
+}
+
+>>>>>>> carousel
 .flex-justify-center {
 	justify-content: center;
 }
 
 .flex-align-items-center {
 	align-items: center;
+<<<<<<< HEAD
+=======
+}
+
+.flex-align-content-center {
+	align-content: center;
+}
+
+/* display properties */
+
+.element-hide {
+	display: none;
+>>>>>>> carousel
 }
 
 /* form styling */
 
 input[type=text] {
 	border-radius: 100px;
+<<<<<<< HEAD
 	width: 220px;
 	padding: 10px 20px;
+=======
+>>>>>>> carousel
 	border: none;
 	font-size: 0.9em;
 	font-family: Raleway;
+	padding-left: 10px;
+	width: 100%;
 }
 
 button {
+<<<<<<< HEAD
 	margin-left: -97px;
+=======
+>>>>>>> carousel
 	font-size: 0.9em;
 	border-radius: 100px;
 	font-family: Raleway;
@@ -302,22 +561,138 @@ button {
 	-webkit-appearance: none;
 }
 
+<<<<<<< HEAD
 /* misfit declarations */
 
 .mobile-hide {
 	display: none;
+=======
+.form-bg {
+	background-color: #fff;
+	padding:3px;
+	border-radius: 100px;
+	width: 80%;
+	max-width: 500px;
+}
+
+.btn-styling {
+	padding: 8px 16px;
+	border-radius: 100px;
+}
+
+/* flickity overide */
+
+.flickity-prev-next-button {
+	top: 35%;
+}
+
+/* alert box styling */
+#modalContainer {
+    background-color:rgba(0, 0, 0, 0.3);
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:10000;
+    background-image:url(tp.png); /* required by MSIE to prevent actions on lower z-index elements */
+}
+
+#alertBox {
+    position:relative;
+    width:300px;
+    padding-bottom: 20px;
+    margin-top:35vh;
+    border-radius:10px;
+    background-color:#fff;
+    background-repeat:no-repeat;
+    background-position:20px 30px;
+    text-align: center;
+}
+
+#modalContainer > #alertBox {
+    position:fixed;
+}
+
+#alertBox h1 {
+    margin:0;
+    font:bold 0.9em Raleway;
+    background-color:#e2574c;
+    color:#FFF;
+    border-radius: 10px 10px 0 0;
+    padding:10px 0;
+}
+
+#alertBox p {
+    font:0.8em Raleway;
+    padding:20px 0;
+}
+
+#alertBox #closeBtn {
+    display:block;
+    position:relative;
+    margin:0 auto;
+    padding:7px;
+    border:0 none;
+    width:70px;
+    font:0.7em Raleway;
+    text-transform:uppercase;
+    text-align:center;
+    color:#FFF;
+    background-color:#e2574c;
+    border-radius: 3px;
+    text-decoration:none;
+>>>>>>> carousel
 }
 
 /* Media Queries */
 
 @media only screen and (min-device-width: 600px) and (max-device-width: 1239px), only screen and (min-width: 600px) and (max-width: 1239px){
 
+<<<<<<< HEAD
  	.section-padding {
 		padding: 16px 20px;
 	}
 
 	.no-padding-tablet {
 		padding: 0px;
+=======
+
+	.tablet-section-padding-horizontal {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.no-padding-tablet {
+		padding: 0px;
+	}
+
+	.font-line-height-sm {
+		line-height: 1em;
+	}
+
+	.newsletter {
+		background-size: auto 230%;
+	}
+
+	.tablet-hide {
+		display: none;
+	}
+}
+
+@media only screen and  (min-device-width: 600px) and (min-width: 600px) {
+
+	body {
+		font-size: 16px;
+	}
+
+ 	p {
+		font-size: 1.1em;
+	}
+
+	h1 {
+		font-size: 3em;
+>>>>>>> carousel
 	}
 
 	.tablet-section-padding-horizontal {
@@ -341,6 +716,7 @@ button {
 		font-size: 16px;
 	}
 
+<<<<<<< HEAD
 	p {
 		font-size: 1.1em;
 	}
@@ -364,10 +740,34 @@ button {
 
 	 .jumbotron {
 		height: 400px;
+=======
+	nav {
+		height: 90px;
+		font-size: 1em;
+		position: fixed;
+		background-color: rgba(255,255,255,.9);
+		z-index: 1;
+		transition: all 0.35s ease;
+		top: 0;
 	}
 
-	.product {
-		width: 40%;
+	nav img { 
+		height: 60%;
+	}
+
+	main {
+		margin-top: 90px;
+	}
+
+	.flex-1 {
+		flex:1;
+>>>>>>> carousel
+	}
+
+	.scrolled {
+		height: 60px;
+		transition: all 0.35s ease;
+		font-size: .9em;
 	}
 
 	.sm-font-tablet-desktop {
@@ -378,16 +778,22 @@ button {
 		font-size: 1em;
 	}
 
+<<<<<<< HEAD
 	.icon-font {
 		font-size: 1em;
 		padding-top: 6px;
 		padding-bottom: 6px;
+=======
+	.font-line-height-lrg {
+		line-height: 2.1em;
+>>>>>>> carousel
 	}
 
 	.text-align-left {
 		text-align: left;
 	}
 
+<<<<<<< HEAD
 	.font-line-height-lrg {
 		line-height: 2.1em;
 	}
@@ -412,37 +818,105 @@ button {
 
 	.tablet-desktop-padding-right {
 		padding-right: 30px;
+=======
+	.icon-font {
+		padding-top: 8px;
+		padding-bottom: 8px;
 	}
 
-		input[type=text] {
-		width: 380px;
-		padding: 14px 30px;
-		font-size: 1em;
+	.width-30 {
+		width: 30px;
 	}
 
+	.category-padding {
+		padding-top: 11%;
+		padding-bottom: 11%;
+	}
+
+	.sm-padding-horizontal {
+		padding-left: 25px;
+		padding-right: 25px;
+>>>>>>> carousel
+	}
+
+	.md-margin-vert {
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+
+<<<<<<< HEAD
 		button {
 		margin-left: -129px;
 		padding: 11px 23px;
 		font-size: 1em;
 		-webkit-appearance: none;
+=======
+	.sm-padding-vert {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.lrg-padding-vert {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	.sm-margin-left-tablet-desktop {
+		margin-left: 5px;
+	}
+
+	.sm-margin-right-tablet-desktop {
+		margin-right: 5px;
+	}
+
+	.product-container-width {
+		width: 33%;
+>>>>>>> carousel
 	}
 
 	.tablet-desktop-show {
 		display: initial;
 	}
+<<<<<<< HEAD
+=======
+
+	.tablet-desktop-hide {
+		display: none;
+	}
+
+	.tablet-desktop-flex-row {
+		flex-direction: row;
+	}
+
+	.tablet-desktop-flex-col {
+		flex-direction: column;
+	}
+
+		input[type=text] {
+		font-size: 1em;
+		padding-left: 20px;
+	}
+
+		button {
+		padding: 11px 23px;
+		font-size: 1em;
+		-webkit-appearance: none;
+	}
+
+>>>>>>> carousel
 }
 
 @media only screen and  (min-device-width: 1240px) and (min-width: 1240px) {
 
 	nav {
-		height: 60px;
-		padding: 20px 20px;
+		height: 90px;
 	}
 
 	h1 {
 		font-size: 4em;
 	}
 
+<<<<<<< HEAD
 	h3 {
 		font-size: 1.4em;
 	}
@@ -455,14 +929,40 @@ button {
 		width: 22%;
 	}
 
+=======
+	main {
+		margin-top: 90px;
+	}
+	footer i.fa {
+		width: 10px;
+	}
+	.product-container-width {
+		width: 25%;
+	}
+
+	.md-margin-vert {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.sm-padding-horizontal {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+>>>>>>> carousel
 	.desktop-footer-padding-horizontal {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
 
 	.desktop-section-padding-horizontal {
-		padding-left: 300px;
-		padding-right: 300px;
+		padding-left: 260px;
+		padding-right: 260px;
+	}
+
+	.tablet-desktop-padding-right {
+		padding-right: 60px;
 	}
 
 	.tablet-desktop-padding-right {
@@ -474,16 +974,25 @@ button {
 	}
 
 		input[type=text] {
-		width: 440px;
-		padding: 14px 30px;
-		font-size: 1em;
+		padding-left: 20px;
 	}
 
 		button {
+<<<<<<< HEAD
 		margin-left: -129px;
 		font-size: 1em;
 		padding: 10px 23px;
         -webkit-appearance: none;
 	}
 
+=======
+		font-size: 1em;
+		padding: 10px 23px;
+	}
+
+	.form-bg {
+		width: 60%;
+}
+
+>>>>>>> carousel
 }

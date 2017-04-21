@@ -48,5 +48,10 @@ April 19th, 2017
 - Added a compare at price functionality for products on sale with a linethrough span
 - Added an email validator for the newsletter form
 
+April 20th, 2017
+
+- Added an image category section with CSS transitions
+- Included a mobile friendly nav bar
+
 A viewable verion of this project can be found here - https://jwilliams8.github.io/ra-project01/
 

@@ -29,13 +29,10 @@ nav {
 	height: 60px;
 }
 
-<<<<<<< HEAD
-=======
 nav img { 
 	height: 65%;
 }
 
->>>>>>> carousel
 a {
 	color: inherit;
 	text-decoration: none;
@@ -44,19 +41,9 @@ a {
 a:hover {
 	color:#b64036;
 }
-<<<<<<< HEAD
-
-/* backgrounds */
-
-.jumbotron {
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url(../images/banner-girl.png) 50% 180% no-repeat, url(../images/flower-bkgd.jpg) center center;
-	background-size: cover, auto 95%, cover;
-	height:330px;
-=======
 
 li {
 	display: inline;
->>>>>>> carousel
 }
 
 button:focus, input:focus {
@@ -139,17 +126,8 @@ button:hover {
 	font-size: 0.9em;
 }
 
-<<<<<<< HEAD
-.font-line-height-lrg {
-	line-height: 1.9em;
-}
-
-.text-center {
-	text-align: center;
-=======
 .lrg-font {
 	font-size: 1.3em;
->>>>>>> carousel
 }
 
 .xl-font {
@@ -168,10 +146,6 @@ button:hover {
 	text-align: center;
 }
 
-.font-style-normal {
-	font-style: initial;
-}
-
 .text-underline {
 	text-decoration: underline;
 }
@@ -188,8 +162,6 @@ button:hover {
 	font-style: italic;
 }
 
-<<<<<<< HEAD
-=======
 .font-style-normal {
 	font-style: initial;
 }
@@ -203,7 +175,6 @@ button:hover {
 	text-shadow: 2px 2px 5px #4f4f4f;
 }
 
->>>>>>> carousel
 .font-white {
 	color: #fff;
 }
@@ -224,9 +195,6 @@ button:hover {
 	font-weight: 300;
 }
 
-<<<<<<< HEAD
-/* percentage width & heights */
-=======
 /* percentage widths & heights */
 
 .full-height {
@@ -371,32 +339,16 @@ button:hover {
 	margin-left: 5px;
 	margin-right: 5px;
 }
->>>>>>> carousel
-
-.full-height {
-	height: 100%;
-	width: auto;
-}
-
-.full-width {
-	width: 100%;
-	height: auto;
-}
-
-<<<<<<< HEAD
-.product {
-	width: 75%;
-}
 
 /* padding declarations */
 
 .section-padding {
 	padding: 10px 8px;
-=======
+}
+
 .category-padding {
 	padding-top: 22%;
 	padding-bottom: 22%;
->>>>>>> carousel
 }
 
 .sm-padding-vert {
@@ -407,8 +359,6 @@ button:hover {
 .lrg-padding-vert {
 	padding-top: 40px;
 	padding-bottom: 40px;
-<<<<<<< HEAD
-=======
 }
 
 .lrg-padding-top {
@@ -417,7 +367,6 @@ button:hover {
 
 .categories {
 	padding-top: 60px;
->>>>>>> carousel
 }
 
 .xs-padding-horizontal {
@@ -425,14 +374,11 @@ button:hover {
 	padding-right: 8px;
 }
 
-<<<<<<< HEAD
-=======
 .sm-padding-horizontal {
 	padding-left: 10px;
 	padding-right: 10px;
 }
 
->>>>>>> carousel
 .xs-padding-bottom {
 	padding-bottom: 15px;
 }
@@ -443,13 +389,6 @@ button:hover {
 
 .md-padding-bottom {
 	padding-bottom: 30px;
-<<<<<<< HEAD
-}
-
-.lrg-padding-bottom {
-	padding-bottom: 50px;
-=======
->>>>>>> carousel
 }
 
 .lrg-padding-bottom {
@@ -504,21 +443,16 @@ button:hover {
 	justify-content: space-around;
 }
 
-<<<<<<< HEAD
-=======
 .flex-justify-start {
 	justify-content:flex-start;
 }
 
->>>>>>> carousel
 .flex-justify-center {
 	justify-content: center;
 }
 
 .flex-align-items-center {
 	align-items: center;
-<<<<<<< HEAD
-=======
 }
 
 .flex-align-content-center {
@@ -529,18 +463,12 @@ button:hover {
 
 .element-hide {
 	display: none;
->>>>>>> carousel
 }
 
 /* form styling */
 
 input[type=text] {
 	border-radius: 100px;
-<<<<<<< HEAD
-	width: 220px;
-	padding: 10px 20px;
-=======
->>>>>>> carousel
 	border: none;
 	font-size: 0.9em;
 	font-family: Raleway;
@@ -549,10 +477,6 @@ input[type=text] {
 }
 
 button {
-<<<<<<< HEAD
-	margin-left: -97px;
-=======
->>>>>>> carousel
 	font-size: 0.9em;
 	border-radius: 100px;
 	font-family: Raleway;
@@ -561,12 +485,6 @@ button {
 	-webkit-appearance: none;
 }
 
-<<<<<<< HEAD
-/* misfit declarations */
-
-.mobile-hide {
-	display: none;
-=======
 .form-bg {
 	background-color: #fff;
 	padding:3px;
@@ -642,21 +560,12 @@ button {
     background-color:#e2574c;
     border-radius: 3px;
     text-decoration:none;
->>>>>>> carousel
 }
 
 /* Media Queries */
 
 @media only screen and (min-device-width: 600px) and (max-device-width: 1239px), only screen and (min-width: 600px) and (max-width: 1239px){
 
-<<<<<<< HEAD
- 	.section-padding {
-		padding: 16px 20px;
-	}
-
-	.no-padding-tablet {
-		padding: 0px;
-=======
 
 	.tablet-section-padding-horizontal {
 		padding-left: 20px;
@@ -692,37 +601,6 @@ button {
 
 	h1 {
 		font-size: 3em;
->>>>>>> carousel
-	}
-
-	.tablet-section-padding-horizontal {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-
-	.font-line-height-sm {
-		line-height: 1em;
-	}
-
-	.newsletter {
-		background-size: auto 230%;
-	}
-	
-}
-
-@media only screen and  (min-device-width: 600px) and (min-width: 600px) {
-
-	body {
-		font-size: 16px;
-	}
-
-<<<<<<< HEAD
-	p {
-		font-size: 1.1em;
-	}
-
-	h1 {
-		font-size: 3em;
 	}
 
 	h2 {
@@ -733,14 +611,6 @@ button {
 		font-size: 1.4em;
 	}
 
-	nav {
-		height: 55px;
-		padding: 18px 12px;
-	}
-
-	 .jumbotron {
-		height: 400px;
-=======
 	nav {
 		height: 90px;
 		font-size: 1em;
@@ -761,7 +631,6 @@ button {
 
 	.flex-1 {
 		flex:1;
->>>>>>> carousel
 	}
 
 	.scrolled {
@@ -771,54 +640,21 @@ button {
 	}
 
 	.sm-font-tablet-desktop {
-		font-size: 0.7em;
+		font-size: .7em;
 	}
 
 	.md-font-tablet-desktop {
 		font-size: 1em;
 	}
 
-<<<<<<< HEAD
-	.icon-font {
-		font-size: 1em;
-		padding-top: 6px;
-		padding-bottom: 6px;
-=======
 	.font-line-height-lrg {
 		line-height: 2.1em;
->>>>>>> carousel
 	}
 
 	.text-align-left {
 		text-align: left;
 	}
 
-<<<<<<< HEAD
-	.font-line-height-lrg {
-		line-height: 2.1em;
-	}
-
-	.tablet-desktop-flex-row {
-		flex-direction: row;
-	}
-
-	.tablet-desktop-flex-col {
-		flex-direction: column;
-	}
-
-	.sm-padding-vert {
-		padding-top: 20px;
-		padding-bottom: 20px;
-	}
-
-	.lrg-padding-vert {
-		padding-top: 60px;
-		padding-bottom: 60px;
-	}
-
-	.tablet-desktop-padding-right {
-		padding-right: 30px;
-=======
 	.icon-font {
 		padding-top: 8px;
 		padding-bottom: 8px;
@@ -836,7 +672,6 @@ button {
 	.sm-padding-horizontal {
 		padding-left: 25px;
 		padding-right: 25px;
->>>>>>> carousel
 	}
 
 	.md-margin-vert {
@@ -844,13 +679,6 @@ button {
 		margin-bottom: 30px;
 	}
 
-<<<<<<< HEAD
-		button {
-		margin-left: -129px;
-		padding: 11px 23px;
-		font-size: 1em;
-		-webkit-appearance: none;
-=======
 	.sm-padding-vert {
 		padding-top: 20px;
 		padding-bottom: 20px;
@@ -871,14 +699,11 @@ button {
 
 	.product-container-width {
 		width: 33%;
->>>>>>> carousel
 	}
 
 	.tablet-desktop-show {
 		display: initial;
 	}
-<<<<<<< HEAD
-=======
 
 	.tablet-desktop-hide {
 		display: none;
@@ -903,7 +728,6 @@ button {
 		-webkit-appearance: none;
 	}
 
->>>>>>> carousel
 }
 
 @media only screen and  (min-device-width: 1240px) and (min-width: 1240px) {
@@ -916,20 +740,6 @@ button {
 		font-size: 4em;
 	}
 
-<<<<<<< HEAD
-	h3 {
-		font-size: 1.4em;
-	}
-
-	.jumbotron {
-		height: 550px;
-	}
-
-	.product {
-		width: 22%;
-	}
-
-=======
 	main {
 		margin-top: 90px;
 	}
@@ -950,7 +760,6 @@ button {
 		padding-right: 30px;
 	}
 
->>>>>>> carousel
 	.desktop-footer-padding-horizontal {
 		padding-left: 20px;
 		padding-right: 20px;
@@ -959,10 +768,6 @@ button {
 	.desktop-section-padding-horizontal {
 		padding-left: 260px;
 		padding-right: 260px;
-	}
-
-	.tablet-desktop-padding-right {
-		padding-right: 60px;
 	}
 
 	.tablet-desktop-padding-right {
@@ -978,14 +783,6 @@ button {
 	}
 
 		button {
-<<<<<<< HEAD
-		margin-left: -129px;
-		font-size: 1em;
-		padding: 10px 23px;
-        -webkit-appearance: none;
-	}
-
-=======
 		font-size: 1em;
 		padding: 10px 23px;
 	}
@@ -994,5 +791,4 @@ button {
 		width: 60%;
 }
 
->>>>>>> carousel
 }

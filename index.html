@@ -194,11 +194,15 @@
 		    	if (!filter.test(email.value)) {
 		   		 alert('Please provide a valid email address');
 		    	return false;
+				} else if (filter.test(email.value)) {
+				alert('Thanks for subscribing!');
+				document.getElementById('txtEmail').value='';
+		    	return true;
 				}
 			}
 
 			// Custom styling for alert box
-			var ALERT_TITLE = "Oops!";
+			var ALERT_TITLE = "Aloha";
 			var ALERT_BUTTON_TEXT = "Ok";
 
 			if(document.getElementById) {

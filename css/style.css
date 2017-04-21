@@ -338,6 +338,10 @@ button:hover {
 	padding: 10px 8px;
 }
 
+.carousel-cell {
+  	padding: 0 20px;
+}
+
 .category-padding {
 	padding-top: 22%;
 	padding-bottom: 22%;
@@ -652,7 +656,7 @@ button {
 		padding-bottom: 8px;
 	}
 
-	.width-30 {
+	.icon-width {
 		width: 30px;
 	}
 
@@ -687,10 +691,6 @@ button {
 
 	.sm-margin-right-tablet-desktop {
 		margin-right: 5px;
-	}
-
-	.product-container-width {
-		width: 33%;
 	}
 
 	.tablet-desktop-show {
@@ -781,6 +781,6 @@ button {
 
 	.form-bg {
 		width: 60%;
-}
+	}
 
 }

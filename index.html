@@ -212,11 +212,11 @@
 		    		document.getElementsByClassName('form-modal-hide')[0].setAttribute("id", "form-modal-show");
 					document.getElementsByTagName("body")[0].setAttribute("class", "overflow-hidden") 
 					setTimeout(function(){ 
-	    			document.forms["newsletter"].reset();
 					document.getElementsByClassName('form-modal-hide')[0].removeAttribute("id");
 					document.getElementsByTagName("body")[0].removeAttribute("class");
+					document.getElementById('txtEmail').value='';
+					//document.forms["newsletter"].reset();
 					}, 3000) ;
-				//document.getElementById('txtEmail').value='';
 		    	return false;
 				}
 			}

@@ -124,7 +124,7 @@
 			<section class="newsletter font-white flex flex-col flex-justify-center flex-align-items-center border-bottom-light section-padding desktop-section-padding-horizontal lrg-padding-vert" id="updates">
 				<h2 class="font-weight-light font-italic font-shadow text-center sm-padding-bottom">Sign-up for<span class="font-bold font-style-normal"> Updates</span></h2>
 				<p class="text-center font-line-height-lrg font-weight-light md-padding-bottom tablet-section-padding-horizontal">Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
-				<form class="flex flex-justify-center full-width" name="form1" id=""newsletter" action="#newsletter">
+				<div class="flex flex-justify-center full-width" id="newsletter">
 					<div class="form-bg flex flex-justify-between">
 					<input type="text" id="txtEmail" class="font-weight-light font-light-grey" placeholder="Your Email">
 					<button name="submit" class="font-white bg-color-orange" onclick='Javascript:checkEmail();'>Subscribe</button>
@@ -219,53 +219,6 @@
 					}, 3000) ;
 		    	return false;
 				}
-			}
-
-			// Custom styling for alert box
-			var ALERT_TITLE = "Aloha";
-			var ALERT_BUTTON_TEXT = "Ok";
-
-			if(document.getElementById) {
-			    window.alert = function(txt) {
-			        createCustomAlert(txt);
-			    }
-			}
-
-			function createCustomAlert(txt) {
-			    d = document;
-
-			    if(d.getElementById("modalContainer")) return;
-
-			    mObj = d.getElementsByTagName("body")[0].appendChild(d.createElement("div"));
-			    mObj.id = "modalContainer";
-			    mObj.style.height = d.documentElement.scrollHeight + "px";
-
-			    alertObj = mObj.appendChild(d.createElement("div"));
-			    alertObj.id = "alertBox";
-			    if(d.all && !window.opera) alertObj.style.top = document.documentElement.scrollTop + "px";
-			    alertObj.style.left = (d.documentElement.scrollWidth - alertObj.offsetWidth)/2 + "px";
-			    alertObj.style.visiblity="visible";
-
-			    h1 = alertObj.appendChild(d.createElement("h1"));
-			    h1.appendChild(d.createTextNode(ALERT_TITLE));
-
-			    msg = alertObj.appendChild(d.createElement("p"));
-			    //msg.appendChild(d.createTextNode(txt));
-			    msg.innerHTML = txt;
-
-			    btn = alertObj.appendChild(d.createElement("a"));
-			    btn.id = "closeBtn";
-			    btn.appendChild(d.createTextNode(ALERT_BUTTON_TEXT));
-			    btn.href = "#";
-			    btn.focus();
-			    btn.onclick = function() { removeCustomAlert();return false; }
-
-			    alertObj.style.display = "block";
-
-			}
-
-			function removeCustomAlert() {
-			    document.getElementsByTagName("body")[0].removeChild(document.getElementById("modalContainer"));
 			}
 		</script>
 	</body>

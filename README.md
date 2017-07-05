@@ -6,26 +6,18 @@ This is my submission for our first marked project in web development at Red Aca
 
 History of site development:
 
-<<<<<<< HEAD
-
-=======
->>>>>>> carousel
 April 14th, 2017
 
 - Built basic HTML structure (mobile first) containing the necessary text elements with basic CSS styling.
 
 April 15th, 2017
 
-<<<<<<< HEAD
 - Solified HTML structure and CSS styling with the proper build of the website's sections 
-=======
 - Solified HTML structure and CSS styling with the proper build of the website's sections
->>>>>>> carousel
 - Added two media queries, one for tablet support at 600px and another for desktop support at 1240px
 
 April 16th, 2017
 
-<<<<<<< HEAD
 -Converted social icons and other necessary elementsi nto links with appropriate hover styling
 -Included a meta tag to remove default iOS styling for tel tags
 -Removed default webkit appearance for submit input buttons
@@ -35,9 +27,6 @@ April 17th, 2017 @ 11:18 PM
 - Reduced css to ensure there were no unused classes floating around, adjusted ordering and names of selectors to optimize semantic meaning. 
 - Added IE Edge compatibility meta tag
 - Fixed indentation between parent/child elements
-
-A viewable verion of this project can be found here - https://jwilliams8.github.io/ra-project01/
-=======
 - Converted social icons and other necessary elementsi nto links with appropriate hover styling -Included a meta tag to remove default iOS styling for tel tags -Removed default webkit appearance for submit input buttons
 
 April 17th, 2017
@@ -75,6 +64,9 @@ April 20th, 2017
 - Added an image category section with CSS transitions
 - Included a mobile friendly nav bar
 
+April 23, 2017
+
+- Added/Replaced files with compressed verions provided by google page speed insights in an attempt to improve speed and performance of site
+
 A viewable verion of this project can be found here - https://jwilliams8.github.io/ra-project01/
 
->>>>>>> carousel

@@ -5,15 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="format-detection" content="telephone=no">
-		<link rel="stylesheet" href="css/reset.css" type="text/css">
-		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css" media="screen">
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
-		<link rel="stylesheet" href="css/style.css" type="text/css">
-
-		<script src="https://use.fontawesome.com/853343e015.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-		<script type="text/javascript" src="javascript/smoothscroll.js"></script>
-		<script type="text/javascript" src="javascript/carousel.js"></script>
+		<link rel="stylesheet" href="./dist/min.css" media="screen">
 	</head>
 
 	<body>
@@ -129,15 +121,23 @@
 			</section>
 
 
-			<section class="newsletter font-white flex flex-col flex-justify-center flex-align-items-center border-bottom-light section-padding desktop-section-padding-horizontal lrg-padding-vert" id="updates" onload='document.form1.text1.focus()'>
+			<section class="newsletter font-white flex flex-col flex-justify-center flex-align-items-center border-bottom-light section-padding desktop-section-padding-horizontal lrg-padding-vert" id="updates">
 				<h2 class="font-weight-light font-italic font-shadow text-center sm-padding-bottom">Sign-up for<span class="font-bold font-style-normal"> Updates</span></h2>
 				<p class="text-center font-line-height-lrg font-weight-light md-padding-bottom tablet-section-padding-horizontal">Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
-				<form class="flex flex-justify-center full-width" name="form1" id="newsletter" action="#newsletter">
+				<form class="flex flex-justify-center full-width" name="form1" id=""newsletter" action="#newsletter">
 					<div class="form-bg flex flex-justify-between">
 					<input type="text" id="txtEmail" class="font-weight-light font-light-grey" placeholder="Your Email">
-					<button type="submit" name="submit" class="font-white bg-color-orange" onclick='Javascript:checkEmail();'>Subscribe</button>
+					<button name="submit" class="font-white bg-color-orange" onclick='Javascript:checkEmail();'>Subscribe</button>
 					</div>
-				</form>
+				</div>
+				<div class="modal form-modal-hide">
+					<div class="modal-bg flex flex-justify-center flex-align-items-center">
+						<div class="modal-box flex flex-col flex-justify-center">
+							<i id="subscribe-icon" aria-hidden="true"></i>
+							<p class="modal-message"></p>
+						</div>
+					</div>
+				</div>
 			</section>
 		</main>
 
@@ -172,7 +172,11 @@
 				</a>
 			</div>				
 		</footer>
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="https://use.fontawesome.com/853343e015.js"></script>
+		<script type="text/javascript" src="javascript/flickity.pkgd.js"></script>
+		<script type="text/javascript" src="javascript/smoothscroll.js"></script>
+		<script type="text/javascript" src="javascript/carousel.js"></script>
 		<script>
 			// Script for nav adjustments when scrolling past 100px from top of window
 			$(function() {
@@ -192,12 +196,28 @@
 		    	var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 		    	if (!filter.test(email.value)) {
-		   		 alert('Please provide a valid email address');
+		    	    document.getElementsByClassName('modal-message')[0].innerHTML ="Invalid Email";
+		    	    document.getElementById('subscribe-icon').setAttribute("class", "fa fa-times-circle-o");
+		    		document.getElementsByClassName('form-modal-hide')[0].setAttribute("id", "form-modal-show");
+					document.getElementsByTagName("body")[0].setAttribute("class", "overflow-hidden") 
+					setTimeout(function(){ 
+					document.getElementsByClassName('form-modal-hide')[0].removeAttribute("id");
+					document.getElementsByTagName("body")[0].removeAttribute("class");
+					}, 3000) ;
+
 		    	return false;
 				} else if (filter.test(email.value)) {
-				alert('Thanks for subscribing!');
-				document.getElementById('txtEmail').value='';
-		    	return true;
+				 document.getElementsByClassName('modal-message')[0].innerHTML ="Thank you for subscribing!";
+		    	    document.getElementById('subscribe-icon').setAttribute("class", "fa fa-check-circle-o");
+		    		document.getElementsByClassName('form-modal-hide')[0].setAttribute("id", "form-modal-show");
+					document.getElementsByTagName("body")[0].setAttribute("class", "overflow-hidden") 
+					setTimeout(function(){ 
+					document.getElementsByClassName('form-modal-hide')[0].removeAttribute("id");
+					document.getElementsByTagName("body")[0].removeAttribute("class");
+					document.getElementById('txtEmail').value='';
+					//document.forms["newsletter"].reset();
+					}, 3000) ;
+		    	return false;
 				}
 			}
 
@@ -208,7 +228,7 @@
 			if(document.getElementById) {
 			    window.alert = function(txt) {
 			        createCustomAlert(txt);
-			    } 
+			    }
 			}
 
 			function createCustomAlert(txt) {
